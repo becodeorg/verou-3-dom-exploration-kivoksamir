@@ -27,7 +27,3 @@ for (var i = 0; i < children.length; i++) {
   document.write(elements);
 
 }
-
-
-
-
