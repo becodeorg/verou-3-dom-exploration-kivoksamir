@@ -1,7 +1,7 @@
 
 
 
-
+// just calling the element using its class name .. 
 const important_items = document.querySelectorAll(".important")
 console.log(important_items);
 
@@ -13,7 +13,8 @@ important_items.forEach((element)=>{
 
 });
 
-console.log(important_items);
+
+
 
 
 
@@ -21,7 +22,6 @@ console.log(important_items);
 /* loop through , add classes to IMG */
 
 const images=document.querySelectorAll("img");
-console.log(images);
 
 images.forEach((img)=>{
     
