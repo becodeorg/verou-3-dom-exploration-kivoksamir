@@ -9,7 +9,7 @@ const li_items = ol_items.querySelectorAll("li");
 console.log(li_items[0]);
 
 
-// switch the <li> content .. 
+// switch the <li> content .. git add .git add
 const btn = document.getElementById("btn_text");
 
 btn.addEventListener('click', ()=>{
