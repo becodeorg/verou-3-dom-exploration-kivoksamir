@@ -16,3 +16,23 @@ btn.addEventListener('click', ()=>{
 li_items[0].innerText=li_items[4].innerText;
 })
 
+ ///////////
+
+
+ const secound_header=document.getElementById("secound");
+ const third_header=document.getElementById("third");
+ const btn_1=document.getElementById("btn_header");
+
+
+
+ const all_sections=document.querySelectorAll("section");
+ const target=all_sections[2];
+ btn_1.addEventListener('click' , ()=>{
+
+third_header.innerHTML=secound.innerHTML;
+target.remove();
+
+    
+ });
+
+ 
