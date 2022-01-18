@@ -14,6 +14,9 @@ Timer=()=> {               // anonymous function
     const list = document.createElement('li');
 
 
+    
+
+
     const li_delete =document.getElementById("time");  // delete the list by press (I) ;
     
     window.addEventListener("keydown" , (e)=>{    
@@ -24,6 +27,10 @@ Timer=()=> {               // anonymous function
         }
         
         });
+
+
+
+
 
     list.innerHTML =`${minuteTimer}.${secondTimer }` 
     timing.appendChild(list)   
