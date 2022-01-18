@@ -10,8 +10,21 @@ Timer=()=> {               // anonymous function
 
     // select timing place
 
-    const timing = document.getElementById('time')
-    const list = document.createElement('li')
+    const timing = document.getElementById('time');
+    const list = document.createElement('li');
+
+
+    const li_delete =document.getElementById("time");  // delete the list by press (I) ;
+    
+    window.addEventListener("keydown" , (e)=>{    
+    
+        if(e.key==="i"){
+        
+            li_delete.remove(); // using styling .. 
+        }
+        
+        });
+
     list.innerHTML =`${minuteTimer}.${secondTimer }` 
     timing.appendChild(list)   
    }
@@ -63,3 +76,5 @@ window.addEventListener("keydown",(e)=>{
                         }
 
 });
+
+
