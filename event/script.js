@@ -11,7 +11,7 @@ Timer=()=> {               // anonymous function
     // select timing place
 
     const timing = document.getElementById('time')
-    const list = document.createElement('LI')
+    const list = document.createElement('li')
     list.innerHTML =`${minuteTimer}.${secondTimer }` 
     timing.appendChild(list)   
    }
@@ -48,3 +48,18 @@ const div3 = document.getElementById('orange')
 div1.addEventListener('click', createList)
 div2.addEventListener('click', createList)
 div3.addEventListener('click', createList)
+
+
+//// changing the background by using space .. 
+
+
+window.addEventListener("keydown",(e)=>{
+
+                        if(e.code==="Space"){   // space must be capital letter .... 
+
+                            document.body.style.background="gray";
+
+
+                        }
+
+});
