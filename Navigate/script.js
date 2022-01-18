@@ -16,7 +16,7 @@ btn.addEventListener('click', ()=>{
 li_items[0].innerText=li_items[4].innerText;
 })
 
- ///////////
+ //////////
 
 
  const secound_header=document.getElementById("secound");
