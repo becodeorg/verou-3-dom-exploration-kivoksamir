@@ -15,10 +15,48 @@ the_age.addEventListener('keyup',()=>{
     input_value=the_age.value; // must be inside the if loop
 
     
-    if(input_value > 18 ){
+    if(input_value >= 18 ){
     section_1.style.visibility="visible";
     }else{
     section_1.style.visibility = "hidden";
     }
 
 });
+
+// password .. 
+
+document.addEventListener("keyup" , ()=>{
+    const password=document.getElementById("pwd").value; // using ("#id") not working with (getelementbyID) 
+    const password_conf = document.getElementById("pwd-confirm").value;
+
+    if(password.length < 6 ){
+        document.getElementById("pwd").style.background="red";
+    
+        //alert("the password is too short");
+
+        
+        } else if(password != password_conf){
+            document.getElementById("pwd").style.background="red"; // call one more time (not the value)
+            document.getElementById("pwd-confirm").style.background="red";
+            
+
+        }else{
+            document.getElementById("pwd").style.background="white";
+            document.getElementById("pwd-confirm").style.background="white";
+        }
+        
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
