@@ -51,6 +51,32 @@ document.addEventListener("keyup" , ()=>{
 
 
 
+//dark_Mode
+
+document.addEventListener("change",()=>{
+    const toggle=document.getElementById("toggle-darkmode").value;
+    const inputs=document.querySelectorAll("input");
+    
+        if(toggle == "dark"){
+        document.body.style.background="gray";
+        for(i=0 ; i <= inputs.length ; i++){
+            inputs[i].style.background="gray"
+        };
+        
+
+        }else{
+            document.body.style.background="white";
+            for(i=0 ; i <= inputs.length ; i++){
+                inputs[i].style.background="white"
+            };
+        }
+    
+})
+
+
+
+
+
 
 
 
